@@ -20,6 +20,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(90deg, #f0f0f0, #e0e0e0, #f0f0f0);
+  background: #b4afaf;
+  color: #ffffff;
   animation: gradientBG 10s infinite;
 }

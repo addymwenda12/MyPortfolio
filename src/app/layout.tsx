@@ -23,6 +23,8 @@ export default function RootLayout({
     <html lang='eng'>
       <body style={{
         fontFamily: 'Poppins, sans-serif',
+        margin: 0,
+        padding: 0,
       }}>
         {isLoading ? <LoadingScreen /> : children}
       </body>

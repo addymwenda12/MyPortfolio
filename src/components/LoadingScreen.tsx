@@ -18,10 +18,12 @@ const LoadingScreen: React.FC = () => {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#f0f0f0',
+      backgroundColor: '#272727',
       fontSize: '2rem',
       fontWeight: 'bold',
       fontFamily: 'Poppins, sans-serif',
+      color: '#ffffff',
+      zIndex: 9999,
       animation: 'gradientBG 5s ease infinite'
     }}>
       <LanguageGreeting greeting={greeting} />
