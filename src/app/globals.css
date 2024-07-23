@@ -3,3 +3,23 @@
   50% { background-color: #e0e0e0; }
   100% { background-color: #f0f0f0; }
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0, #f0f0f0);
+  animation: gradientBG 10s infinite;
+}
