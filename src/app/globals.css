@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Chillax';
   src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
   src: url('../public/fonts/Chillax-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Chillax';
   src: url('../public/fonts/Poppins-Bold.ttf') format('truetype');
   src: url('../public/fonts/Chillax-Bold.ttf') format('truetype');
   font-weight: bold;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Chillax', sans-serif;
   background: #b4afaf;
   color: #ffffff;
   animation: gradientBG 10s infinite;
