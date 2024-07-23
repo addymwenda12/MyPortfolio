@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='eng'>
       <body style={{
-        fontFamily: 'Poppins, sans-serif',
+        fontFamily: 'Chillax, sans-serif',
         margin: 0,
         padding: 0,
       }}>

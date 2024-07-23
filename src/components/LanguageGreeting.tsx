@@ -12,11 +12,11 @@ const LanguageGreeting: React.FC<LanguageGreetingProps> = ({ greeting }) => {
     <div className="language-greeting" style={{
       textAlign: 'center',
       transition: 'opacity 0.1s ease-in-out',
-      fontFamily: 'Poppins, sans-serif'
+      fontFamily: 'Chillax, sans-serif',
     }}>
       <h2 style={{
         margin: '0 0 0.5rem 0',
-        fontSize: '3rem',
+        fontSize: '2.5rem',
         fontWeight: 'bold',
         }}>{greeting.text}</h2>
       <p style={{

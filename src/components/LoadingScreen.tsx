@@ -21,7 +21,7 @@ const LoadingScreen: React.FC = () => {
       backgroundColor: '#272727',
       fontSize: '2rem',
       fontWeight: 'bold',
-      fontFamily: 'Poppins, sans-serif',
+      fontFamily: 'Chillax, sans-serif',
       color: '#ffffff',
       zIndex: 9999,
       animation: 'gradientBG 5s ease infinite'

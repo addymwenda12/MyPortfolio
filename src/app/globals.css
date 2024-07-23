@@ -7,6 +7,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
+  src: url('../public/fonts/Chillax-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,6 +15,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins-Bold.ttf') format('truetype');
+  src: url('../public/fonts/Chillax-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
