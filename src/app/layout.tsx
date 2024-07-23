@@ -14,7 +14,7 @@ export default function RootLayout({
     // Simulate loading screen
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);

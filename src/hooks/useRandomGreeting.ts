@@ -3,19 +3,16 @@
 import { useState, useEffect } from "react";
 import { greetings, Greetings } from "../lib/greetings";
 
-export function useRandomGreeting(interval: number = 200) {
-  const [currentGreeting, setCurrentGreeting] = useState<Greetings>(greetings[0]);
+export function useRandomGreeting(interval: number = 200) { // Changed to 200ms
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const changeGreeting = () => {
-      const randomIndex = Math.floor(Math.random() * greetings.length);
-      setCurrentGreeting(greetings[randomIndex]);
-    };
-
-    const timer = setInterval(changeGreeting, interval);
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % greetings.length);
+    }, interval);
 
     return () => clearInterval(timer);
   }, [interval]);
 
-  return currentGreeting;
+  return greetings[currentIndex];
 }
