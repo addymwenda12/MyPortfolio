@@ -9,9 +9,12 @@ interface LanguageGreetingProps {
 
 const LanguageGreeting: React.FC<LanguageGreetingProps> = ({ greeting }) => {
   return (
-    <div className="language-greeting">
-      <h2>{greeting.text}</h2>
-      <p>{greeting.language}</p>
+    <div className="language-greeting" style={{
+      textAlign: 'center',
+      transition: 'opacity 0.5s ease-in-out',
+    }}>
+      <h2 style={{ margin: '0 0 0.5rem 0'}}>{greeting.text}</h2>
+      <p style={{ margin: 0, fontSize: '1rem', opacity: 0.7}}>{greeting.language}</p>
     </div>
   );
 };
