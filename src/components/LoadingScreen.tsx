@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import { useRandomGreeting } from "../hooks/useRandomGreeting";
 import LanguageGreeting from './LanguageGreeting';

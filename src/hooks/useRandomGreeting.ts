@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from "react";
 import { greetings, Greetings } from "../lib/greetings";
 
