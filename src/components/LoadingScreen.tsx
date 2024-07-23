@@ -15,10 +15,11 @@ const LoadingScreen: React.FC = () => {
       width: '100%',
       height: '100%',
       display: 'flex',
+      flexDirection: 'column',
       justifyContent: 'center',
+      alignItems: 'center',
       backgroundColor: '#f0f0f0',
-      fontSize: '2em',
-      fontWeight: 'bold',
+      animation: 'gradientBG 5s ease infinite'
     }}>
       <LanguageGreeting greeting={greeting} />
     </div>

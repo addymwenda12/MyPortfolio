@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { greetings, Greetings } from "../lib/greetings";
 
-export function useRandomGreeting(interval: number = 2000) {
+export function useRandomGreeting(interval: number = 200) {
   const [currentGreeting, setCurrentGreeting] = useState<Greetings>(greetings[0]);
 
   useEffect(() => {
