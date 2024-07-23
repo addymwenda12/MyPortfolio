@@ -1,21 +1,29 @@
-import './globals.css';
-import type { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Addy Mutuiri',
-  description: 'A showcase of my works and skills',
-}
+import React, { useState, useEffect } from 'react';
+import LoadingScreen from '@/components/LoadingScreen';
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading screen
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <html lang='eng'>
       <body>
-        {children}
+        {isLoading ? <LoadingScreen /> : children}
       </body>
     </html>
-  );
+  )
 }
