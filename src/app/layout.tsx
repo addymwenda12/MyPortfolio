@@ -21,7 +21,9 @@ export default function RootLayout({
 
   return (
     <html lang='eng'>
-      <body>
+      <body style={{
+        fontFamily: 'Poppins, sans-serif',
+      }}>
         {isLoading ? <LoadingScreen /> : children}
       </body>
     </html>

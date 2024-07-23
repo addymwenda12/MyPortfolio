@@ -19,6 +19,9 @@ const LoadingScreen: React.FC = () => {
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#f0f0f0',
+      fontSize: '2rem',
+      fontWeight: 'bold',
+      fontFamily: 'Poppins, sans-serif',
       animation: 'gradientBG 5s ease infinite'
     }}>
       <LanguageGreeting greeting={greeting} />
