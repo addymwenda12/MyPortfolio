@@ -23,7 +23,7 @@ const LanguageGreeting: React.FC<LanguageGreetingProps> = ({ greeting }) => {
       margin: 0,
       fontSize: '1rem',
       opacity: 0.7
-      }}>{greeting.language}</p>
+      }}>{/*greeting.language*/}</p>
     </div>
   );
 };
