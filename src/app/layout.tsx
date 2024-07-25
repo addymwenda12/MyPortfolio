@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import LoadingScreen from '@/components/LoadingScreen';
-import Curve from '@/components/curve';
+// import Curve from '@/components/curve';
 
 export default function RootLayout({
   children,
@@ -27,7 +27,7 @@ export default function RootLayout({
         margin: 0,
         padding: 0,
       }}>
-        {isLoading ? <LoadingScreen /> : <Curve backgroundColor='black'>{children}</Curve>}
+        {isLoading ? <LoadingScreen /> : children}
       </body>
     </html>
   )
