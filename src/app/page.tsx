@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useEffect, useRef } from "react";
+import Curve from "@/components/curve";
 import styled from "styled-components";
 import { gsap } from "gsap";
+import Head from "next/head";
 
 const HomeContainer = styled.div`
   min-height: 100vh;
@@ -67,11 +69,19 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
-      <h1>Welcome to my site</h1>
-      <p>
-        This is a site created with Next.js and TypeScript.
-      </p>
-    </main>
+    <>
+    <Head>
+      <title>Addy Mutuiri</title>
+      <meta name="description" content="Addy Mutuiri's personal website" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <Curve backgroundColor={"#B0AD98"}>
+      <h1>Home</h1>
+      <div className="body">
+        <p>Welcome to my personal website. I am a software engineer based in Nairobi, Kenya. I am passionate about building software that solves real-world problems. I am also a tech enthusiast and I love learning new technologies. I am currently working as a software engineer at <a href="https://www.azuri-technologies.com/" target="_blank">Azuri Technologies</a>.</p>
+      </div>
+    </Curve>
+    </>
   );
 }
