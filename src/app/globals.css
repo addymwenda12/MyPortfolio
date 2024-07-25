@@ -26,3 +26,35 @@ body {
   color: #ffffff;
   animation: gradientBG 10s infinite;
 }
+
+/* Curve component styles */
+.curve {
+  position: relative;
+  overflow: hidden;
+}
+
+.curve svg,
+.curve .background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh + 600px);
+  pointer-events: none;
+}
+
+.curve .background {
+  background-color: black;
+  transition: opacity 0s linear 0.1s;
+}
+
+.curve .route {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: white;
+  font-size: 46px;
+  z-index: 3;
+  transform: translateX(-50%);
+  text-align: center;
+}

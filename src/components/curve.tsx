@@ -31,7 +31,7 @@ interface CurveProps {
   backgroundColour: string;
 }
 
-const Curve: React.FC<CurveProps> = ({ children, backgroundColour }) => {
+const Curve: React.FC<CurveProps> = ({ children, backgroundColor }) => {
   const router = useRouter();
   const [dimensions, setDimensions] = useState<Dimensions>({
     width: null,
