@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { text, curve, translate } from './anim';
 
 interface Routes {
@@ -41,7 +41,7 @@ interface Dimensions {
 }
 
 export default function Curve({ children, backgroundColor }: CurveProps) {
-    const router = useRouter();
+    const router: any = useRouter();
     const [dimensions, setDimensions] = useState<Dimensions>({
         width: null,
         height: null

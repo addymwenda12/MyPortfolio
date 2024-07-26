@@ -1,4 +1,4 @@
-import Curve from '@/components/curve'
+import Curve from '@/components/layout/Curve'
 import Head from 'next/head'
 
 export default function Contact() {
