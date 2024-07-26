@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import { text, curve, translate } from '../lib/anim';
 
 const routes: { [key: string]: string } = {
@@ -33,16 +33,10 @@ interface CurveProps {
 }
 
 const Curve: React.FC<CurveProps> = ({ children, backgroundColor }) => {
+  const router: any = useRouter();
   const [dimensions, setDimensions] = useState<Dimensions>({ width: null, height: null });
-  const [isClient, setIsClient] = useState(false);
-  const[route, setRoute] = useState<string | null>(null);
 
-  const router = useRouter();
-  
   useEffect(() => {
-    setIsClient(true);
-    setRoute(router.route);
-  
     function resize() {
       setDimensions({
         width: window.innerWidth,
@@ -54,17 +48,13 @@ const Curve: React.FC<CurveProps> = ({ children, backgroundColor }) => {
     return () => {
       window.removeEventListener("resize", resize);
     };
-  }, [router]);
-  
-  if (!isClient) {
-    return null;
-  }
+  }, []);
 
   return (
     <div className="curve" style={{ backgroundColor }}>
       <div style={{ opacity: dimensions.width === null ? 1 : 0 }} className="background" />
       <motion.p className="route" {...anim(text)}>
-        {route && routes[route]}
+        {routes[router.route]}
       </motion.p>
       {dimensions.width !== null && <SVG height={dimensions.height!} width={dimensions.width!} />}
       {children}
