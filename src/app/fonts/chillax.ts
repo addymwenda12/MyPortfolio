@@ -43,12 +43,12 @@ export const chillax = localFont({
       style: "italic",
     },
     {
-      path: "./Mona-Sans-SemiBoldNarrow.woff2",
+      path: "./Chillax-Semibold.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "./Mona-Sans-SemiBoldNarrowItalic.woff2",
+      path: "./Chillax-Semibold.woff2",
       weight: "600",
       style: "italic",
     },

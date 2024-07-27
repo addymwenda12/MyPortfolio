@@ -4,7 +4,7 @@ import { chillax } from "../fonts/chillax";
 import { motion } from "framer-motion";
 import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
-import profile from "../../public/profile.webp";
+// import profile from "../../public/profile.webp";
 
 const Hero = () => {
   return (
@@ -87,7 +87,7 @@ const Hero = () => {
             <Image
               src={profile}
               priority
-              alt="Victor's headshot"
+              alt="Addy's headshot"
               data-blobity-tooltip="Fine boy"
               data-blobity-invert="false"
               className=" w-[150px] rounded-[16px] grayscale hover:grayscale-0 md:w-[200px] md:rounded-[32px] lg:w-[245px]"
