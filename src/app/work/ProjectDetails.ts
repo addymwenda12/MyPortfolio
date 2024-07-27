@@ -18,7 +18,7 @@ export const devProjects = [
     technologies: ["Vue", "Nodejs", "Expressjs, MongoDB"],
     github: "https://github.com/addymwenda12/MamaHub",
     demo: "frontend-black-rho.vercel.app/",
-    // image: require(".//../../public/projects/interlock-flip.png"),
+    image: require(".//../../public/project/mamahub.png"),
     available: true,
   },
   {
@@ -29,7 +29,7 @@ export const devProjects = [
     technologies: ["React", "Nodejs", "Expressjs, MongoDB"],
     github: "https://github.com/addymwenda12/Motile-Tishere-Application",
     demo: "https://vimeo.com/960981856?share=copy",
-    // image: require(".//../../public/projects/synthetix.png"),
+    image: require(".//../../public/project/motile.png"),
     available: true,
   },
   {
@@ -40,7 +40,7 @@ export const devProjects = [
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/addymwenda12/ALX_Portfolio-FrontEnd",
     demo: "https://projectweatherappke.netlify.app/",
-    // image: require(".//../../public/projects/propellent-new-flip.png"),
+    image: require(".//../../public/project/weather.png"),
     available: true,
   },
 ];
